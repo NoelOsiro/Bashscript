@@ -22,7 +22,7 @@ printf "\nInsert Commit message\n"
 read -r message
 
     git commit -m "$message"
-    git push git@github.com:NoelOsiro/"$repo".git;
+    git push https://github.com/NoelOsiro/"$repo".git;
     figlet "HAVE A NICE DAY!!"
     sleep 2
     exit
