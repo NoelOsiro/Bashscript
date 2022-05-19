@@ -23,7 +23,7 @@ read -r message
 
     git commit -m "$message"
     git push git@github.com:NoelOsiro/"$repo".git;
-    echo "HAVE A NICE DAY!!"
+    echo "Pushing Ps"
     sleep 2
     exit
 
