@@ -23,7 +23,9 @@ read -r message
 
     git commit -m "$message"
     git push git@github.com:NoelOsiro/"$repo".git;
+    echo  "\e[32m"
     figlet "Pushing Ps"
+    echo "\e[0m"
     sleep 2
     exit
 
