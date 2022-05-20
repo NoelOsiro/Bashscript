@@ -2,6 +2,8 @@
 
 repo=$1
 file=$2
+GREEN="\e[92m"
+STOP="\e[0m"
 if [ -z "$repo" ] || [ -z "$file" ]; then
     echo ERROR: Please include repo name followed by filename or \* \(glob\) for entire directory.
   exit 1
@@ -23,9 +25,9 @@ read -r message
 
     git commit -m "$message"
     git push git@github.com:NoelOsiro/"$repo".git;
-    echo  "\e[32m"
+    printf "${GREEN}"
     figlet "Pushing Ps"
-    echo "\e[0m"
+    printf "${STOP}"
     sleep 2
     exit
 
